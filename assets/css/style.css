@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #4154f1;
+  color: #012970;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #012970;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -149,7 +149,7 @@ section {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #013289;
+  color: #012970;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -526,19 +526,6 @@ section {
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients-area {
-  padding: 100px 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .clients-area {
-    padding: 80px 0;
-  }
-}
-@media (max-width: 767px) {
-  .clients-area {
-    padding: 60px 0;
-  }
-}
 .clients-area .clients-bg {
   width: 100%;
   background: url(../img/clients-bg.png) center no-repeat;
