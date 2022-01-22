@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #012970;
+  color: #717ff5;
   text-decoration: none;
 }
 
@@ -105,12 +105,13 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
+  background: #0c3c91;
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 35px 0;
 }
 .header.header-scrolled {
-  background: #fff;
+  background: #0c3c91;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -147,9 +148,9 @@ section {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  color: #012970;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -166,8 +167,8 @@ section {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #012970;
-  font-size: 28px;
+  color: white;
+  font-size: 42px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -216,7 +217,7 @@ section {
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 18px;
   color: #012970;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -229,22 +230,24 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
-  background-size: cover;
+  background: #012970;
+
 }
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  padding-top: 20px;
+  font-size: 38px;
   font-weight: 700;
-  color: #012970;
+  color: white;
 }
 .hero h2 {
-  color: #444444;
+  color: #ffc107;
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 36px;
 }
 .hero .hero-img {
   text-align: right;
+  margin-top: 80px;
 }
 @media (min-width: 1024px) {
   .hero {
@@ -255,6 +258,9 @@ section {
   .hero {
     height: auto;
     padding: 120px 0 60px 0;
+  }
+  .hero h1, h2 {
+    text-align: center;
   }
   .hero .hero-img {
     text-align: center;
@@ -598,7 +604,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
+  background: #012970;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -625,7 +631,7 @@ section {
 .footer .copyright {
   text-align: left;
   padding-top: 10px;
-  color: #012970;
+  color: white;
 }
 @media (max-width: 768px) {
   .footer .copyright {
@@ -636,7 +642,7 @@ section {
   padding-top: 66px;
   text-align: right;
   font-size: 13px;
-  color: #012970;
+  color: white;
 }
 @media (max-width: 768px) {
   .footer .credits {
