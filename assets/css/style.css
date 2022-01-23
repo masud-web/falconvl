@@ -25,7 +25,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 /*--------------------------------------------------------------
@@ -41,12 +41,12 @@ section {
   padding-bottom: 40px;
 }
 .section-header h2 {
-  font-size: 13px;
+  font-size: 38px;
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
-  text-transform: uppercase;
+  color: #032F62;
+  text-transform: none;
 }
 .section-header p {
   margin: 10px 0 0 0;
@@ -73,7 +73,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #012970;
+  background: #032F62;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -105,13 +105,13 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  background: #0c3c91;
+  background: #032F62;
   transition: all 0.5s;
   z-index: 997;
-  padding: 35px 0;
+  padding: 30px 0;
 }
 .header.header-scrolled {
-  background: #0c3c91;
+  background: #032F62;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -147,7 +147,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 18px;
   font-weight: 700;
   color: white;
@@ -168,7 +168,7 @@ section {
 */
 .mobile-nav-toggle {
   color: white;
-  font-size: 42px;
+  font-size: 35px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -218,7 +218,7 @@ section {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 18px;
-  color: #012970;
+  color: #032F62;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #4154f1;
@@ -230,7 +230,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: #012970;
+  background: #032F62;
 
 }
 .hero h1 {
@@ -337,76 +337,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Products Section
---------------------------------------------------------------*/
-.products .product-box {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  height: 100%;
-  padding: 30px 20px;
-  text-align: center;
-  transition: 0.3s;
-  border-radius: 5px;
-}
-.products .product-box .icon {
-  font-size: 72px;
-  padding: 28px 28px;
-  border-radius: 4px;
-  position: relative;
-  margin-bottom: 25px;
-  display: inline-block;
-  line-height: 0;
-  transition: 0.3s;
-}
-.products .product-box img {
-  height: 250px;
-}
-.products .product-box h3 {
-  color: #444444;
-  font-weight: 700;
-  margin: 15px 0;
-}
-.products .product-box.blue {
-  border-bottom: 3px solid #2db6fa;
-}
-.products .product-box.blue .icon {
-  color: #2db6fa;
-  background: #dbf3fe;
-}
-.products .product-box.blue:hover {
-  background: #2db6fa;
-}
-.products .product-box.orange {
-  border-bottom: 3px solid #f68c09;
-}
-.products .product-box.orange .icon {
-  color: #f68c09;
-  background: #fde3c4;
-}
-.products .product-box.orange:hover {
-  background: #f68c09;
-}
-.products .product-box.red {
-  border-bottom: 3px solid #e9222c;
-}
-.products .product-box.red .icon {
-  color: #e9222c;
-  background: #fef7f8;
-}
-.products .product-box.red:hover {
-  background: #e9222c;
-}
-.products .product-box:hover h3, .products .product-box:hover p {
-  color: #fff;
-}
-.products .product-box:hover .icon {
-  background: #fff;
-}
-
-/*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px 2px;
+.products {
+  background-color: #f8f6f3;
+}
+.products .box {
+  padding: 20px 0;
   height: 100%;
   background: #fff;
   text-align: center;
@@ -416,35 +353,27 @@ section {
   overflow: hidden;
   transition: 0.3s;
 }
-.pricing .box:hover {
+.products .box:hover {
   transform: scale(1.1);
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
-.pricing h3 {
+.products h3 {
   font-weight: 700;
   font-size: calc(1.3rem + .6vw);
   margin: 15px 0;
 }
-.pricing img {
-  max-width: 100%;
+.products img {
+  padding: 20px 20px;
   height: 250px;
 }
-.pricing ul {
-  padding: 0;
-  list-style: none;
+.products table {
   color: #444444;
   text-align: center;
   line-height: 26px;
   font-size: 16px;
   margin-bottom: 25px;
 }
-.pricing ul li {
-  padding-bottom: 10px;
-}
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
+
 /*--------------------------------------------------------------
 # Suppliers Section
 --------------------------------------------------------------*/
@@ -462,6 +391,9 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  background-color: #f8f6f3;
+}
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
@@ -578,6 +510,9 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact {
+  background-color: #f8f6f3;
+}
 .contact .contact-area {
   background: url(../img/contact-bg.jpg) right no-repeat;
   background-size: contain;
@@ -631,7 +566,7 @@ section {
 .footer .footer-info p {
   font-size: 14px;
   margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Merriweather', serif;
 }
 .footer .copyright {
   text-align: left;
