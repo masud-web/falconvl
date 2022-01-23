@@ -360,18 +360,15 @@ section {
 .products h3 {
   font-weight: 700;
   font-size: calc(1.3rem + .6vw);
-  margin: 15px 0;
+  margin-bottom: 20px;
 }
 .products img {
   padding: 20px 20px;
   height: 250px;
 }
-.products table {
-  color: #444444;
+.products th {
   text-align: center;
-  line-height: 26px;
-  font-size: 16px;
-  margin-bottom: 25px;
+  font-weight: 400;
 }
 
 /*--------------------------------------------------------------
@@ -482,7 +479,6 @@ section {
 .clients-area .clients-logos .single-image {
   display: inline-block;
   margin: 13px 10px;
-  background-color: var(--white);
   line-height: 100px;
   padding: 8px 25px;
   border-radius: 8px;
@@ -502,7 +498,7 @@ section {
   transform: translateY(-5px);
 }
 .clients-area .clients-logos img {
-  max-width: 170px;
+  max-width: 250px;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
