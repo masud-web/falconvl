@@ -337,38 +337,64 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
+# Products Section
 --------------------------------------------------------------*/
 .products {
   background-color: #f8f6f3;
 }
-.products .box {
-  padding: 20px 0;
-  height: 100%;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s;
-}
-.products .box:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-}
 .products h3 {
   font-weight: 700;
-  font-size: calc(1.3rem + .6vw);
+  font-size: 24px;
+  text-align: center;
   margin-bottom: 20px;
 }
 .products img {
   padding: 20px 20px;
-  height: 250px;
 }
-.products th {
+.products .btn-details {
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #032F62;
+  box-shadow: 0px 5px 25px rgb(65 84 241 / 30%);
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/*--------------------------------------------------------------
+# Product-details Section
+--------------------------------------------------------------*/
+.product-details {
+  padding-top: 15px;
+  padding-bottom: 0;
+  min-height: 40px;
+  margin-top: 150px;
+}
+.product-details .product-section {
+  background: #f2f2f2 url(../img/products/leaf-big2.png) no-repeat top left;
+  background-size: 30%;
+  padding-bottom: 80px;
+}
+.product-details .product-section .product-title {
+  padding: 30px;
+}
+.product-details .product-section .product-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.product-details .product-section .product-title img {
+  padding: 20px;
+}
+
+.product-details .product-section .product-item p {
   text-align: center;
-  font-weight: 400;
+  padding-top: 10px;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /*--------------------------------------------------------------
