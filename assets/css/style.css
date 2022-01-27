@@ -387,14 +387,15 @@ section {
 }
 .products h3 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
 }
 .products img {
   padding: 20px 20px;
+  max-width: 75%;
 }
-.products .btn-details {
+.btn-details {
   padding: 15px 40px;
   border-radius: 4px;
   transition: 0.5s;
@@ -407,6 +408,7 @@ section {
   letter-spacing: 1px;
 }
 
+
 /*--------------------------------------------------------------
 # Product-details Section
 --------------------------------------------------------------*/
@@ -417,7 +419,7 @@ section {
   padding-bottom: 30px;
 }
 .product-details-2 {
-  background: #f8f6f3 url(../img/products/leaf-big2.png) no-repeat top left;
+  background: #f8f6f3 url(../img/products/leaf-big2.png) no-repeat top right;
   background-size: 30%;
   padding-bottom: 30px;
 }
@@ -443,15 +445,20 @@ section {
 /*--------------------------------------------------------------
 # Suppliers Section
 --------------------------------------------------------------*/
-.suppliers-area .suppliers-table {
+.suppliers-area {
   background: white url(../img/suppliers-bg.png) no-repeat center;
   background-size: cover;
 }
-@media (max-width: 991px) {
-.suppliers-area .suppliers-table {
-  background: white url(../img/suppliers-bg.png) no-repeat center;
-  background-size: contain;
-  }
+
+.suppliers-area h3 {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.suppliers-area img {
+  padding: 20px 20px;
+  max-width: 75%;
 }
 
 /*--------------------------------------------------------------
