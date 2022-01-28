@@ -278,14 +278,14 @@ section {
 }
 .hero h1 {
   margin: 0;
-  padding-top: 10px;
+  padding: 20px 0;
   font-size: 44px;
   font-weight: 700;
   color: white;
 }
 .hero h2 {
   color: #87c540;
-  margin: 15px 0 0 0;
+  padding: 15px 0 0 0;
   font-size: 28px;
 }
 .hero .hero-img {
@@ -318,10 +318,10 @@ section {
     text-align: center;
   }
   .hero h1 {
-    font-size: 32px;
+    font-size: 27px;
   }
   .hero h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .hero .hero-img img {
     width: 100%;
@@ -334,6 +334,10 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .container {
+    z-index: 2;
+    position: relative;
+}
 .about .about-tabs {
   margin-top: 20px;
 }
