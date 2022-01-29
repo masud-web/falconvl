@@ -325,7 +325,7 @@ section {
 }
 @media (max-width: 768px) {
   .hero {
-    height: 70vh;
+    height: 90vh;
     text-align: center;
   }
   .hero .wave-top {
@@ -351,7 +351,7 @@ section {
     max-width: 100%;
   }
   .hero .wave-bottom {
-    bottom: 350px;
+    bottom: 160px;
   }
 }
 
