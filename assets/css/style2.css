@@ -272,20 +272,14 @@ section {
 --------------------------------------------------------------*/
 .hero {
   height: 100vh;
-}
-.hero .wave-top {
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-  top: -45px;
+  background: #032F62;
 }
 .hero .wave-bottom {
   width: 100%;
   overflow: hidden;
   position: absolute;
   z-index: 1;
-  bottom: 20px;
+  bottom: -100px;
 }
 .hero .container {
   z-index: 2;
@@ -299,7 +293,7 @@ section {
   padding: 20px 0;
   font-size: 48px;
   font-weight: 700;
-  color: #032F62;
+  color: white;
 }
 .hero h2 {
   color: #87c540;
