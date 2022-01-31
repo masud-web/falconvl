@@ -150,12 +150,12 @@ section {
 .header {
   transition: all .75s;
   z-index: 997;
-  padding: 25px 0;
+  padding: 20px 0;
   background: #032F62;
 }
 .header.header-scrolled {
   background: #032F62;
-  padding: 15px 0;
+  padding: 12px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 .header .logo {
@@ -270,79 +270,95 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-  height: 100vh;
+#hero {
+  width: 100%;
   position: relative;
-  overflow: hidden;
-}
-.hero::before {
-  content: ' ';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100VH;
-    z-index: 0;
-    opacity: 0.8;
-    background-image: url(../img/hero-board-box3.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-.hero .hero-text {
-  padding-top: 150px;
-  text-align: center;
-  z-index: 2;
-  position: relative;
-}
-.hero h1 {
-  margin: 0;
-  padding: 20px 0;
-  font-size: 72px;
-  font-weight: 900;
-  color: #032F62;
-  text-shadow: 2px 2px black;
-}
-.hero h2 {
-  padding: 15px 0 0 0;
-  font-size: 44px;
-  color: white;
-  text-shadow: 2px 2px black;
-}
-.hero h3 {
-  padding: 15px 0 0 0;
-  font-size: 32px;
-  color: white;
-  text-shadow: 2px 1px black;
+  background: url("../img/hero-bg.png") center bottom no-repeat;
+  background-size: cover;
+  padding: 200px 0 120px 0;
 }
 @media (max-width: 991px) {
-  .hero h1 {
-    font-size: 54px;
+  #hero {
+    padding: 140px 0 60px 0;
   }
 }
-@media (max-width: 768px) {
-  .hero {
-    height: 60vh;
+@media (max-width: 574px) {
+  #hero {
+    padding: 100px 0 20px 0;
   }
-  .hero .hero-text {
-    padding-top: 100px;
-  }
-  .hero h1 {
-    font-size: 28px;
-    text-shadow: 1px 1px black;
-  }
-  .hero h2 {
+}
+#hero .hero-info {
+  width: 100%;
+  float: none;
+  margin: auto;
+  text-align: center;
+}
+#hero .hero-info h2 {
+  color: #74b5fc;
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: 700;
+}
+#hero .hero-info h1 {
+  color: #fff;
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#hero .hero-info h3 {
+  color: #011832;
+  margin-bottom: 48px;
+  font-size: 32px;
+  font-weight: 500;
+}
+#hero .hero-info h3 span {
+  color: #74b5fc;
+}
+@media (max-width: 767px) {
+  #hero .hero-info h2 {
     font-size: 24px;
-    text-shadow: 1px 1px black;
+    margin: 20px 0;
   }
-  .hero h3 {
-    font-size: 20PX;
-    text-shadow: 1px 1px black;
+  #hero .hero-info h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
   }
+  #hero .hero-info h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+#hero .hero-info .btn-get-started, #hero .hero-info .btn-services {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+}
+#hero .hero-info .btn-get-started {
+  background: #007bff;
+  border: 2px solid #007bff;
+  color: #fff;
+}
+#hero .hero-info .btn-get-started:hover {
+  background: none;
+  border-color: #fff;
+  color: #fff;
+}
+#hero .hero-info .btn-services {
+  border: 2px solid #fff;
+}
+#hero .hero-info .btn-services:hover {
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -351,10 +367,6 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .container {
-    z-index: 2;
-    position: relative;
-}
 .about .about-tabs {
   margin-top: 20px;
 }
