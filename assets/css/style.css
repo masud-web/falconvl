@@ -273,7 +273,7 @@ section {
 #hero {
   width: 100%;
   position: relative;
-  background: url("../img/hero-bg.png") center bottom no-repeat;
+  background: url("../img/hero-back2.png") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
 }
@@ -307,7 +307,7 @@ section {
   text-transform: uppercase;
 }
 #hero .hero-info h3 {
-  color: #011832;
+  color: #15a174;
   margin-bottom: 48px;
   font-size: 32px;
   font-weight: 500;
@@ -330,36 +330,6 @@ section {
     margin-bottom: 30px;
   }
 }
-#hero .hero-info .btn-get-started, #hero .hero-info .btn-services {
-  font-family: 'Merriweather', serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 0 20px 20px 0;
-  color: #fff;
-}
-#hero .hero-info .btn-get-started {
-  background: #007bff;
-  border: 2px solid #007bff;
-  color: #fff;
-}
-#hero .hero-info .btn-get-started:hover {
-  background: none;
-  border-color: #fff;
-  color: #fff;
-}
-#hero .hero-info .btn-services {
-  border: 2px solid #fff;
-}
-#hero .hero-info .btn-services:hover {
-  background: #007bff;
-  border-color: #007bff;
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Index Page
@@ -367,6 +337,9 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  background: #DBF3FA;
+}
 .about .about-tabs {
   margin-top: 20px;
 }
