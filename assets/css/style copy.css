@@ -151,10 +151,10 @@ section {
   transition: all .75s;
   z-index: 997;
   padding: 20px 0;
-  background: linear-gradient(to right, #032F62, #767EE8);
+  background: #032F62;
 }
 .header.header-scrolled {
-  background: linear-gradient(to right, #032F62, #767EE8);
+  background: #032F62;
   padding: 12px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -211,7 +211,7 @@ section {
 */
 .mobile-nav-toggle {
   color: white;
-  font-size: 28px;
+  font-size: 35px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -260,7 +260,7 @@ section {
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 18px;
   color: #032F62;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -271,55 +271,30 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  margin-top: 70px;
-  position: relative;
-  height: 80vh;
-  overflow: hidden;
-  background: #9bc5f3;
   width: 100%;
-}
-#hero::before {
-  border-radius: 100%;
-  position: absolute;
-  background: linear-gradient(to right, #032F62, #767EE8);
-  right: -200px;
-  left: -200px;
-  top: -200px;
-  content: '';
-  bottom: 30px;
+  position: relative;
+  background: url("../img/hero-back2.png") center bottom no-repeat;
+  background-size: cover;
+  padding: 200px 0 120px 0;
 }
 @media (max-width: 991px) {
   #hero {
-    height: 40vh;
-  }
-}
-@media (max-width: 768px) {
-  #hero {
-    margin-top: 60px;
-    height: 40vh;
+    padding: 140px 0 60px 0;
   }
 }
 @media (max-width: 574px) {
   #hero {
-    margin-top: 60px;
-    height: 50vh;
+    padding: 100px 0 20px 0;
   }
 }
 #hero .hero-info {
-  padding-top: 50px;
   width: 100%;
   float: none;
   margin: auto;
   text-align: center;
 }
-@media (max-width: 574px) {
-#hero .hero-info {
-    padding-top: 20px;
-  }
-}
-
 #hero .hero-info h2 {
-  color: #9ccbff;
+  color: #74b5fc;
   margin-bottom: 32px;
   font-size: 48px;
   font-weight: 700;
@@ -332,34 +307,27 @@ section {
   text-transform: uppercase;
 }
 #hero .hero-info h3 {
-  color: #9bc5f3;
+  color: #15a174;
   margin-bottom: 48px;
   font-size: 32px;
   font-weight: 500;
 }
 #hero .hero-info h3 span {
-  color: #0af9cc;
+  color: #74b5fc;
 }
-@media (max-width: 768px) {
-  #hero .hero-info h2 {
-    font-size: 32px;
-  }
-  #hero .hero-info h1 {
-    font-size: 42px;
-  }
-  #hero .hero-info h3 {
-    font-size: 24px;
-  }
-}
-@media (max-width: 574px) {
+@media (max-width: 767px) {
   #hero .hero-info h2 {
     font-size: 24px;
+    margin: 20px 0;
   }
   #hero .hero-info h1 {
     font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
   }
   #hero .hero-info h3 {
     font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -370,7 +338,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: #9bc5f3;
+  background: #DBF3FA;
 }
 .about .about-tabs {
   margin-top: 20px;

@@ -148,13 +148,13 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  background: #032F62;
+  background: linear-gradient(to right, #032F62, #767EE8);
   transition: all 0.5s;
   z-index: 997;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 .header.header-scrolled {
-  background: #032F62;
+  background: linear-gradient(to right, #032F62, #767EE8);
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -211,7 +211,7 @@ section {
 */
 .mobile-nav-toggle {
   color: white;
-  font-size: 35px;
+  font-size: 28px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -260,7 +260,7 @@ section {
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 15px;
   color: #032F62;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -270,67 +270,68 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.features_hero {
-  min-height: 600px;
-  height: 100vh;
-  max-height: 750px;
-  background-image: linear-gradient(to left,#76f,#554fe8);
-  color: #fff;
-  padding-top: 53px;
-  overflow: hidden;
+#hero {
+  margin-top: 70px;
   position: relative;
-}
-@media (min-width: 768px)
-.features_hero {
-    padding-top: 83px;
-    min-height: 1000px;
-    max-height: 1100px;
-}
-.features_hero:before {
-  content: "";
-  display: block;
+  height: 80vh;
+  overflow: hidden;
+  background: #d5daff;
   width: 100%;
-  height: 150px;
-  background: url(../img/bg-waves.png) no-repeat top center;
-  background-size: cover;
+}
+#hero::before {
+  border-radius: 100%;
   position: absolute;
+  background: linear-gradient(to right, #032F62, #767EE8);
+  right: -200px;
+  left: -200px;
+  top: -200px;
+  content: '';
+  bottom: 30px;
+}
+
+#hero .hero-info {
+  padding-top: 70px;
+  width: 100%;
+  float: none;
   margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: .2;
-  animation-name: float2;
-  transform-origin: center bottom;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-  animation-duration: 7s;
-  animation-fill-mode: both;
+  text-align: center;
 }
-
-
-.features_hero .wave_white2 {
-  position: absolute;
-  margin: auto;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  z-index: 2;
+#hero .hero-info h2 {
+  color: #9ccbff;
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: 700;
 }
-
-@media (min-width: 768px)
-.wave_white2 {
-  height: 200px;
+#hero .hero-info h1 {
+  color: #fff;
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
-.wave_white2 {
-  display: block;
-  height: 150px;
-  background-image: url(../img/bg-waves-white2.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+#hero .hero-info h3 {
+  color: #9ccbff;
+  margin-bottom: 48px;
+  font-size: 32px;
+  font-weight: 500;
 }
-*, ::after, ::before {
-  box-sizing: inherit;
+#hero .hero-info h3 span {
+  color: #0af9cc;
+}
+@media (max-width: 767px) {
+  #hero .hero-info h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  #hero .hero-info h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  #hero .hero-info h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -339,6 +340,9 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  background: #d5daff;
+}
 .about .container {
     z-index: 2;
     position: relative;
