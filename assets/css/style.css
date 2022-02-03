@@ -203,7 +203,7 @@ section {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #4154f1;
+  color: #0af9cc;
 }
 
 /**
