@@ -381,9 +381,22 @@ section {
 .products {
   background: #e5f0f9;
 }
+.products .bg-holder {   
+  position: absolute;
+  top: -30px;
+  left: -80px;
+  width: 10%;
+}
+
 .products a {
   color: #032F62;
 }
+@media (min-width: 768px) {
+  .products img {
+    max-width: 75%;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Product-details Section
