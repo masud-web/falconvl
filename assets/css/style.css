@@ -274,7 +274,7 @@ section {
   margin-top: 30px;
   position: relative;
   overflow: hidden;
-  background: #9bc5f3;
+  background: linear-gradient(to right, #6782b4, #cde2f3 74%);
 }
 #hero::before {
   border-radius: 100%;
@@ -284,7 +284,7 @@ section {
   left: -200px;
   top: -200px;
   content: '';
-  bottom: 30px;
+  bottom: 0px;
 }
 #hero .hero-text h2 {
   color: #9ccbff;
@@ -318,38 +318,30 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: #9bc5f3;
+  background: linear-gradient(to right, #6782b4, #cde2f3 74%);
   position: relative;
   overflow: hidden;
 }
-}
-@media (min-width: 768px) {
-  .about .decoration-star {
-    top: -110px;
-    left: -150px;
-    width: 300px;
-    }
-}
 .about .decoration-star {
     position: absolute;
-    top: -110px;
-    left: -300px;
-    width: 40%;
-    opacity: 1;
+    width: 60%;
+    left: -400px;
 }
-@media (min-width: 768px) {
-  .about .decoration-star-2 {
-    bottom: -110px;
-    right: -150px;
-    width: 300px;
+@media (max-width: 991px) {
+  .about .decoration-star {
+    top: -60px;
+    left: -350px;
+    width: 75%;
+    opacity: 0.5;
     }
 }
-.about .decoration-star-2 {
-  position: absolute;
-  bottom: -110px;
-  right: -300px;
-  width: 40%;
-  opacity: 1;
+@media (max-width: 768px) {
+  .about .decoration-star {
+    top: -60px;
+    left: -200px;
+    width: 75%;
+    opacity: 0.5;
+    }
 }
 .about .about-tabs .nav-pills {
   border-bottom: 1px solid #eee;
@@ -357,45 +349,40 @@ section {
 .about .about-tabs .nav-link {
   background: none;
   font-family: 'Merriweather', serif;
-  font-size: 16px;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #032F62;
   padding: 12px 0;
-  margin-right: 17px;
+  margin-right: 25px;
   margin-bottom: -2px;
   border-radius: 0;
 }
+@media (max-width: 768px) {
+  .about .about-tabs .nav-link {
+    font-size: 1rem;
+    margin-right: 17px;
+    }  
+  }
 .about .about-tabs .nav-link.active {
   border-bottom: 3px solid #032F62;
+}
+.about .tab-content p {
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+.about .tab-content p {
+  font-size: 1rem;
+  }  
 }
 
 /*--------------------------------------------------------------
 # Products Section
 --------------------------------------------------------------*/
 .products {
-  background-color: #f8f6f3;
+  background: #e5f0f9;
 }
-.products h3 {
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.products img {
-  padding: 20px 20px;
-  max-width: 75%;
-}
-.btn-details {
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #032F62;
-  box-shadow: 0px 5px 25px rgb(65 84 241 / 30%);
-  font-family: 'Merriweather', serif;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1px;
+.products a {
+  color: #032F62;
 }
 
 /*--------------------------------------------------------------
@@ -433,7 +420,7 @@ section {
 # Suppliers Section
 --------------------------------------------------------------*/
 .suppliers-area {
-  background: white url(../img/suppliers-bg.png) no-repeat center;
+  background: #cde2f3 url(../img/suppliers-bg.png) no-repeat center;
   background-size: cover;
 }
 .suppliers-area-2 {
