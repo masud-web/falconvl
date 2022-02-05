@@ -48,6 +48,11 @@ section {
   color: #032F62;
   text-transform: none;
 }
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 32px;
+  }
+}
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
@@ -274,7 +279,7 @@ section {
   margin-top: 30px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #6782b4, #cde2f3 74%);
+  background: linear-gradient(to right, #6782b4, #e5f0f9 74%);
 }
 #hero::before {
   border-radius: 100%;
@@ -318,7 +323,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: linear-gradient(to right, #6782b4, #cde2f3 74%);
+  background: linear-gradient(to right, #6782b4, #e5f0f9 74%);
   position: relative;
   overflow: hidden;
 }
@@ -379,15 +384,12 @@ section {
 # Products Section
 --------------------------------------------------------------*/
 .products {
-  background: #e5f0f9;
+  background: 
+  url(../img/slack-icon.png) top left/auto 30% no-repeat, 
+  url(../img/slack-icon.png) top right/auto 30% no-repeat #e5f0f9;
+  position: relative;
+  overflow: hidden;
 }
-.products .bg-holder {   
-  position: absolute;
-  top: -30px;
-  left: -80px;
-  width: 10%;
-}
-
 .products a {
   color: #032F62;
 }
@@ -399,7 +401,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Product-details Section
+# Product Page Section
 --------------------------------------------------------------*/
 
 .product-details {
@@ -433,9 +435,21 @@ section {
 # Suppliers Section
 --------------------------------------------------------------*/
 .suppliers-area {
-  background: #cde2f3 url(../img/suppliers-bg.png) no-repeat center;
+  background: url(../img/suppliers-bg.png) no-repeat center;
   background-size: cover;
 }
+.suppliers-area a {
+  color: #032F62;
+}
+@media (min-width: 768px) {
+  .suppliers-area img {
+    max-width: 75%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Suppliers Page Section
+--------------------------------------------------------------
 .suppliers-area-2 {
   background: #f8f6f3;
 }
@@ -485,7 +499,8 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  background-color: #f8f6f3;
+  background: url(../img/testimonal-bg.png) left no-repeat;
+  background-size: cover;
 }
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -562,16 +577,11 @@ section {
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients-area .clients-bg {
-  background: url(../img/clients-bg.png) no-repeat right;
-  background-size: contain;
+.clients-area  {
+  background: url(../img/clients-bg.png) right no-repeat;
+  background-size: cover;
 }
-@media (max-width: 768px) {
-  .clients-area .clients-bg {
-    background: url(../img/clients-bg.png) no-repeat center;
-    background-size: cover;
-  }
-}
+
 .clients-area .clients-logos {
   text-align: center;
   display: inline-block;
@@ -625,11 +635,11 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background-color: #f8f6f3;
+  background-color: #e5f0f9;
 }
-.contact .contact-area {
-  background: url(../img/contact-bg.jpg) right no-repeat;
-  background-size: contain;
+.contact  {
+  background: url(../img/contact-bg2.jpg) center no-repeat;
+  background-size: cover;
 }
 .contact .info-box {
   color: #444444;
@@ -658,7 +668,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #032F62;
+  background: linear-gradient(to left, #032F62, #767EE8);
   padding: 0 0 30px 0;
   font-size: 14px;
 }
