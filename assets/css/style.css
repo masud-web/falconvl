@@ -385,8 +385,8 @@ section {
 --------------------------------------------------------------*/
 .products {
   background: 
-  url(../img/slack-icon.png) top left/auto 30% no-repeat, 
-  url(../img/slack-icon.png) top right/auto 30% no-repeat #e5f0f9;
+  url(../img/wheel1-bg.png) top left/auto 30% no-repeat, 
+  url(../img/wheel2-bg.png) bottom right/auto 20% no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -435,7 +435,7 @@ section {
 # Suppliers Section
 --------------------------------------------------------------*/
 .suppliers-area {
-  background: url(../img/suppliers-bg.png) no-repeat center;
+  background: url(../img/suppliers-bg2.png) no-repeat center;
   background-size: cover;
 }
 .suppliers-area a {
@@ -581,7 +581,6 @@ section {
   background: url(../img/clients-bg.png) right no-repeat;
   background-size: cover;
 }
-
 .clients-area .clients-logos {
   text-align: center;
   display: inline-block;
@@ -631,16 +630,15 @@ section {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background-color: #e5f0f9;
-}
-.contact  {
   background: url(../img/contact-bg2.jpg) center no-repeat;
   background-size: cover;
 }
+
 .contact .info-box {
   color: #444444;
   background: #fafbff;
