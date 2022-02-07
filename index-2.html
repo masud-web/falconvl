@@ -14,11 +14,11 @@
   <meta property="og:site_name" content="Falcon Venture Limited" />
   <meta property="og:url" content="https://masud-web.github.io/falconvl/" />
   <meta property="og:description" content="container board paper, packaging materials and related products from Falcon Venture Limited." />
-  <meta property="og:image" content="https://masud-web.github.io/falconvl/assets/img/falcon-cover.png" />
+  <meta property="og:image" content="https://masud-web.github.io/falconvl/assets/img/falcon-cover.jpg" />
 
   <!--Twitter Card-->
   <meta property='twitter:title' content="Falcon Venture Limited"/>
-  <meta property='twitter:image' content="https://masud-web.github.io/falconvl/assets/img/falcon-cover.png"/>
+  <meta property='twitter:image' content="https://masud-web.github.io/falconvl/assets/img/falcon-cover.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
 
   <!-- Favicons -->
@@ -29,21 +29,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Variables CSS Files -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+
   <!-- Template Main CSS File -->
-  <link href="assets/css/style2.css" rel="stylesheet">
+  <link href="assets/css/style-2.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top shadow">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index-2.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo-white.png" alt="">
         <span></span>
       </a>
@@ -63,19 +66,19 @@
     </div>
   </header><!-- End Header -->
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="clearfix">
-  <div class="container" data-aos="fade-up">
-
-     <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
-      <h2>Welcome to</h2>
-      <h1>Falcon Venture Limited</h1>
-      <h3>bridging you with <span>quality paper</span></h3>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+      <div class="hero-text px-1 py-5 my-5 text-center" data-aos="zoom-in" data-aos-delay="100">
+        <h2 class="display-6">Welcome to</h2>
+        <h1 class="display-4 fw-bold py-2">Falcon Venture Limited</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">bridging you with <span>quality paper</span></p>
+        </div>
+      </div>
     </div>
-
-  </div>
-</section>
-<!-- End Hero Section -->
+  </section>
+  <!-- End Hero Section -->
 
 
   <main id="main">
@@ -88,26 +91,17 @@
           <h2>About Us</h2>
         </header>
 
+        <img class="decoration-star" src="assets/img/decoration-star.svg" alt="">
+
         <!-- About Tabs -->
-        <div class="row about-tabs" data-aos="fade-up">
+        <div class="row justify-content-end about-tabs" data-aos="fade-up">
 
-          <div class="col-lg-5">
-            <img src="assets/img/about.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-7">
-
+          <div class="col-lg-9">
             <!-- Tabs -->
             <ul class="nav nav-pills mb-3">
-              <li>
-                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Who we are</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab2">History</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Promise of Excellence</a>
-              </li>
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Our Story</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">History</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Promise of Excellence</a></li>
             </ul><!-- End Tabs -->
 
             <!-- Tab Content -->
@@ -169,85 +163,128 @@
     </section>
     <!-- End About Section -->
 
-
-    <!-- ======= Products Section ======= -->
-    <section id="products" class="products">
-
-      <div class="container" data-aos="fade-up">
-        <header class="section-header">
-          <h2>Our Products</h2>
-        </header>
-
-        <div class="row justify-content-md-center gy-4">
-
-          <div class="col-lg-4 col-md-4">
-            <div>
-              <img src="assets/img/paper-products.png" class="img-fluid mx-auto d-block" alt="">
-              <h3>Paper Products</h3>
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+          <div class="container" data-aos="fade-up">
+    
+            <header class="section-header">
+              <h2>Our Products</h2>
+            </header>
+    
+            <div class="row gy-5">
+    
+              <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="service-item">
+                  <div class="img">
+                    <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="details position-relative">
+                    <div class="icon">
+                      <i class="bi bi-box"></i>
+                    </div>
+                    <a href="products.html#paper" class="stretched-link">
+                      <h3>Paper</h3>
+                    </a>
+                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                  </div>
+                </div>
+              </div><!-- End Service Item -->
+    
+              <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="service-item">
+                  <div class="img">
+                    <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="details position-relative">
+                    <div class="icon">
+                      <i class="bi bi-gear"></i>
+                    </div>
+                    <a href="products.html#machinery" class="stretched-link">
+                      <h3>Machinery</h3>
+                    </a>
+                    <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                  </div>
+                </div>
+              </div><!-- End Service Item -->
+    
+              <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="service-item">
+                  <div class="img">
+                    <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="details position-relative">
+                    <div class="icon">
+                      <i class="bi bi-funnel"></i>
+                    </div>
+                    <a href="products.html#chemicals" class="stretched-link">
+                      <h3>Chemical</h3>
+                    </a>
+                    <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                  </div>
+                </div>
+              </div><!-- End Service Item -->
+    
             </div>
+    
           </div>
+        </section><!-- End Services Section -->
 
-          <div class="col-lg-4 col-md-4">
-            <div>
-              <img src="assets/img/machinery.png" class="img-fluid mx-auto d-block" alt="">
-              <h3>Machinery</h3>
-            </div>
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <header class="section-header">
+            <h2>Suppliers around the Globe</h2>
+          </header>
+  
+          <div class="row gy-4">
+  
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pricing-item">
+                <div class="img">
+                  <img src="assets/img/paper-suppliers.png" class="mx-auto d-block" alt="">
+                </div>
+                <div class="pricing-header">
+                  <a href="suppliers.html#paper-suppliers">
+                    <h3>Paper Suppliers</h3>
+                  </a>
+                </div>
+  
+              </div>
+            </div><!-- End Pricing Item -->
+  
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pricing-item featured">
+                <div class="img">
+                  <img src="assets/img/machinery-suppliers.png" class="mx-auto d-block" alt="">
+                </div>
+                <div class="pricing-header">
+                  <a href="suppliers.html#machinery-suppliers">
+                    <h3>Machinery Suppliers</h3>
+                  </a>
+                </div>
+  
+              </div>
+            </div><!-- End Pricing Item -->
+  
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+              <div class="pricing-item">
+                <div class="img">
+                  <img src="assets/img/chemical-suppliers.png" class="mx-auto d-block" alt="">
+                </div>
+                <div class="pricing-header">
+                  <a href="suppliers.html#chemical-suppliers">
+                    <h3>Chemical Suppliers</h3>
+                  </a>
+                </div>
+  
+              </div>
+            </div><!-- End Pricing Item -->
+  
           </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div>
-              <img src="assets/img/chemicals.png" class="img-fluid mx-auto d-block" alt="">
-              <h3>Chemical</h3>
-            </div>
-          </div>
-
-          <div class="d-inline-flex d-grid mx-auto justify-content-center">
-            <a href="products.html" class="btn-details"> <span>Product Details</span> <i class="bi bi-arrow-right"></i> </a>
-          </div>
+  
         </div>
-      </div>
-    </section>
-    <!-- End Products Section -->
-
-
-   <!-- ======= Suppliers Section ======= -->
-  <section id="suppliers" class="suppliers-area">
-    <div class="container" data-aos="fade-up">
-      <header class="section-header">
-        <h2>Suppliers around the Globe</h2>
-      </header>
-
-        <div class="row justify-content-md-center gy-4">
-
-          <div class="col-lg-4 col-md-4">
-            <div>
-              <img src="assets/img/paper-suppliers.png" class="img-fluid mx-auto d-block" alt="">
-              <h3>Paper Suppliers</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div>
-              <img src="assets/img/machinery-suppliers.png" class="img-fluid mx-auto d-block" alt="">
-              <h3>Machinery Suppliers</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div>
-              <img src="assets/img/chemical-suppliers.png" class="img-fluid mx-auto d-block" alt="">
-              <h3>Chemical Suppliers</h3>
-            </div>
-          </div>
-
-          <div class="d-inline-flex d-grid mx-auto justify-content-center">
-            <a href="suppliers.html" class="btn-details"> <span>Supplier Details</span> <i class="bi bi-arrow-right"></i> </a>
-          </div>
-        </div>
-    </div>
-  </section>
-  <!-- End suppliers Section -->
-
+      </section><!-- End Pricing Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -309,21 +346,15 @@
                 </div>
               </div>
             </div><!-- End testimonial item -->
-
           </div>
-
           <div class="swiper-pagination"></div>
-
         </div>
-
       </div>
-
     </section>
     <!-- End Testimonials Section -->
 
-
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients-area">
+    <section id="clients" class="clients-area section-bg">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
           <h2>Our Valued Clients</h2>
@@ -353,7 +384,7 @@
 
         <div class="row gy-4 contact-area">
 
-          <div class="col-lg-8">
+          <div class="col-lg-8 mx-auto">
             <div class="row gy-4">
 
               <div class="col-md-6">
@@ -407,8 +438,8 @@
     <div class="container footer-info">
       <div class="row">
         <div class="col-lg-6 col-md-6 copyright">
-          <a href="index.html" class="logo">
-            <img src="assets/img/logo-white.png" alt="">
+          <a href="index-2.html" class="logo">
+            <img src="assets/img/logo.png" alt="">
           </a>
           <p>&copy; <strong><span>Falcon Venture Limited</span></strong>. All Rights Reserved</p>
         </div>
@@ -429,6 +460,7 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 

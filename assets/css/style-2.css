@@ -34,8 +34,8 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  position: relative;
 }
-
 .section-header {
   text-align: center;
   padding-bottom: 40px;
@@ -48,19 +48,38 @@ section {
   color: #032F62;
   text-transform: none;
 }
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 32px;
+  }
+}
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  color: #032F62;
 }
 @media (max-width: 768px) {
   .section-header p {
     font-size: 28px;
     line-height: 32px;
   }
+}
+.section-bg {
+  padding: 120px 0;
+  color: #fff;
+}
+.section-bg:before {
+  content: "";
+  background: linear-gradient(to right, #6782b4, #e5f0f9 74%);
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
 }
 
 /*--------------------------------------------------------------
@@ -148,14 +167,14 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  background: linear-gradient(to right, #032F62, #767EE8);
-  transition: all 0.5s;
+  transition: all .75s;
   z-index: 997;
   padding: 20px 0;
+  background: linear-gradient(to right, #032F62, #767EE8);
 }
 .header.header-scrolled {
   background: linear-gradient(to right, #032F62, #767EE8);
-  padding: 15px 0;
+  padding: 12px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 .header .logo {
@@ -203,7 +222,7 @@ section {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #4154f1;
+  color: #0af9cc;
 }
 
 /**
@@ -271,12 +290,10 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  margin-top: 70px;
+  margin-top: 30px;
   position: relative;
-  height: 80vh;
   overflow: hidden;
-  background: #d5daff;
-  width: 100%;
+  background: linear-gradient(to right, #6782b4, #e5f0f9 74%);
 }
 #hero::before {
   border-radius: 100%;
@@ -286,53 +303,32 @@ section {
   left: -200px;
   top: -200px;
   content: '';
-  bottom: 30px;
+  bottom: 0px;
 }
-
-#hero .hero-info {
-  padding-top: 70px;
-  width: 100%;
-  float: none;
-  margin: auto;
-  text-align: center;
-}
-#hero .hero-info h2 {
+#hero .hero-text h2 {
   color: #9ccbff;
-  margin-bottom: 32px;
-  font-size: 48px;
-  font-weight: 700;
 }
-#hero .hero-info h1 {
+#hero .hero-text h1 {
   color: #fff;
-  margin-bottom: 32px;
-  font-size: 48px;
-  font-weight: 900;
-  text-transform: uppercase;
 }
-#hero .hero-info h3 {
-  color: #9ccbff;
-  margin-bottom: 48px;
-  font-size: 32px;
-  font-weight: 500;
+@media (max-width: 425px) {
+  #hero .hero-text h1 {
+    font-size: 1.8rem;
+  }
 }
-#hero .hero-info h3 span {
+#hero .hero-text p {
+  color: #9bc5f3;
+  font-size: 1.5rem;
+}
+@media (max-width: 425px) {
+  #hero .hero-text p {
+    font-size: 1.3rem;
+  }
+}
+#hero .hero-text p span {
   color: #0af9cc;
 }
-@media (max-width: 767px) {
-  #hero .hero-info h2 {
-    font-size: 24px;
-    margin: 20px 0;
-  }
-  #hero .hero-info h1 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  #hero .hero-info h3 {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Index Page
@@ -341,89 +337,161 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: #d5daff;
+  background: linear-gradient(to right, #6782b4, #e5f0f9 74%);
+  position: relative;
+  overflow: hidden;
 }
-.about .container {
-    z-index: 2;
-    position: relative;
+.about .decoration-star {
+    position: absolute;
+    width: 60%;
+    left: -400px;
 }
-.about .about-tabs {
-  margin-top: 20px;
-}
-.about .about-tabs h3 {
-  color: #012970;
-  font-weight: 700;
-  font-size: 32px;
-  margin-bottom: 10px;
+@media (max-width: 991px) {
+  .about .decoration-star {
+    top: -60px;
+    left: -350px;
+    width: 75%;
+    opacity: 0.5;
+    }
 }
 @media (max-width: 768px) {
-  .about .about-tabs h3 {
-    font-size: 28px;
-  }
+  .about .decoration-star {
+    top: -60px;
+    left: -200px;
+    width: 75%;
+    opacity: 0.5;
+    }
 }
 .about .about-tabs .nav-pills {
   border-bottom: 1px solid #eee;
 }
 .about .about-tabs .nav-link {
   background: none;
-  text-transform: uppercase;
-  font-size: 15px;
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: #012970;
+  color: #032F62;
   padding: 12px 0;
   margin-right: 25px;
   margin-bottom: -2px;
   border-radius: 0;
 }
+@media (max-width: 768px) {
+  .about .about-tabs .nav-link {
+    font-size: 1rem;
+    margin-right: 17px;
+    }  
+  }
 .about .about-tabs .nav-link.active {
-  color: #4154f1;
-  border-bottom: 3px solid #4154f1;
+  border-bottom: 3px solid #032F62;
 }
-.about .about-tabs .tab-content h4 {
-  font-size: 18px;
-  margin: 0;
-  font-weight: 700;
-  color: #012970;
+.about .tab-content p {
+  font-size: 1.2rem;
 }
-.about .about-tabs .tab-content i {
-  font-size: 24px;
-  line-height: 0;
-  margin-right: 8px;
-  color: #4154f1;
+@media (max-width: 768px) {
+.about .tab-content p {
+  font-size: 1rem;
+  }  
 }
 
 /*--------------------------------------------------------------
-# Products Section
+# Services Section
 --------------------------------------------------------------*/
-.products {
-  background-color: #f8f6f3;
+.services .img {
+  border-radius: 8px;
+  overflow: hidden;
 }
-.products h3 {
-  font-weight: 700;
-  font-size: 20px;
+.services .img img {
+  transition: 0.6s;
+}
+.services .details {
+  padding: 50px 30px;
+  margin: -100px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
+  background: var(--color-white);
+  position: relative;
+  background: rgba(var(--color-white-rgb), 0.9);
   text-align: center;
-  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0 25px rgba(var(--color-black-rgb), 0.1);
 }
-.products img {
-  padding: 20px 20px;
+.services .details .icon {
+  margin: 0;
+  width: 72px;
+  height: 72px;
+  background: var(--color-primary);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  border: 6px solid var(--color-white);
+}
+.services .details h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+.services .details p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: black;
+}
+.services .service-item:hover .details h3 {
+  color: var(--color-primary);
+}
+.services .service-item:hover .details .icon {
+  background: var(--color-white);
+  border: 2px solid var(--color-primary);
+}
+.services .service-item:hover .details .icon i {
+  color: var(--color-primary);
+}
+.services .service-item:hover .img img {
+  transform: scale(1.2);
+}
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.pricing .pricing-item {
+  box-shadow: 0 3px 20px -2px rgba(var(--color-gray-rgb), 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.pricing .pricing-item img {
+  padding: 20px;
   max-width: 75%;
 }
-.btn-details {
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #032F62;
-  box-shadow: 0px 5px 25px rgb(65 84 241 / 30%);
-  font-family: 'Merriweather', serif;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1px;
+.pricing .pricing-header {
+  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.9), rgba(var(--color-secondary-rgb), 0.9)) center center;
+  background-size: cover;
+  text-align: center;
+  padding: 15px;
+}
+.pricing h3 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: var(--color-white);
+}
+.pricing .featured .pricing-header {
+  background: linear-gradient(rgba(var(--color-primary-rgb), 0.9), rgba(var(--color-primary-rgb), 0.9)) center center;
 }
 
-
 /*--------------------------------------------------------------
-# Product-details Section
+# Product Page Section
 --------------------------------------------------------------*/
 
 .product-details {
@@ -457,9 +525,21 @@ section {
 # Suppliers Section
 --------------------------------------------------------------*/
 .suppliers-area {
-  background: white url(../img/suppliers-bg.png) no-repeat center;
+  background: url(../img/suppliers-bg2.png) no-repeat center;
   background-size: cover;
 }
+.suppliers-area a {
+  color: #032F62;
+}
+@media (min-width: 768px) {
+  .suppliers-area img {
+    max-width: 75%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Suppliers Page Section
+--------------------------------------------------------------
 .suppliers-area-2 {
   background: #f8f6f3;
 }
@@ -509,7 +589,8 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  background-color: #f8f6f3;
+  background: url(../img/testimonal-bg.png) left no-repeat;
+  background-size: cover;
 }
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -586,16 +667,6 @@ section {
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients-area .clients-bg {
-  background: url(../img/clients-bg.png) no-repeat right;
-  background-size: contain;
-}
-@media (max-width: 768px) {
-  .clients-area .clients-bg {
-    background: url(../img/clients-bg.png) no-repeat center;
-    background-size: cover;
-  }
-}
 .clients-area .clients-logos {
   text-align: center;
   display: inline-block;
@@ -645,16 +716,15 @@ section {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background-color: #f8f6f3;
+  background: url(../img/contact-bg2.jpg) center no-repeat;
+  background-size: cover;
 }
-.contact .contact-area {
-  background: url(../img/contact-bg.jpg) right no-repeat;
-  background-size: contain;
-}
+
 .contact .info-box {
   color: #444444;
   background: #fafbff;
@@ -667,7 +737,7 @@ section {
 }
 .contact .info-box h3 {
   font-size: 20px;
-  color: #012970;
+  color: #032F62;
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
@@ -682,7 +752,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #032F62;
+  background: linear-gradient(to left, #032F62, #767EE8);
   padding: 0 0 30px 0;
   font-size: 14px;
 }
