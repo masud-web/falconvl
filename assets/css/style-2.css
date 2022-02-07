@@ -522,26 +522,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Suppliers Section
+# Suppliers Page Section
 --------------------------------------------------------------*/
+.suppliers-page {
+  background: url(../img/leaf-bg.png) no-repeat left center;
+  background-size: contain;
+}
 .suppliers-area {
-  background: url(../img/suppliers-bg2.png) no-repeat center;
-  background-size: cover;
+  padding: 40px 0;
 }
 .suppliers-area a {
   color: #032F62;
-}
-@media (min-width: 768px) {
-  .suppliers-area img {
-    max-width: 75%;
-  }
-}
-
-/*--------------------------------------------------------------
-# Suppliers Page Section
---------------------------------------------------------------*/
-.suppliers-area-2 {
-  background: #f8f6f3;
 }
 .suppliers-area h3 {
   font-weight: 700;
