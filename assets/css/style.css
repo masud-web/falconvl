@@ -222,7 +222,7 @@ section {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #0af9cc;
+  color: #9ccbff;
 }
 
 /**
@@ -395,87 +395,87 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Products Section
 --------------------------------------------------------------*/
-.services .img {
+.products .img {
   border-radius: 8px;
   overflow: hidden;
 }
-.services .img img {
+.products .img img {
   transition: 0.6s;
 }
-.services .details {
+.products .details {
   padding: 50px 30px;
   margin: -100px 30px 0 30px;
   transition: all ease-in-out 0.3s;
-  background: var(--color-white);
+  background: white;
   position: relative;
-  background: rgba(var(--color-white-rgb), 0.9);
+  background: rgba(255, 255, 255, 0.9);
   text-align: center;
   border-radius: 8px;
-  box-shadow: 0px 0 25px rgba(var(--color-black-rgb), 0.1);
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
 }
-.services .details .icon {
+.products .details .icon {
   margin: 0;
   width: 72px;
   height: 72px;
-  background: var(--color-primary);
+  background: #032F62;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  color: var(--color-white);
+  color: white;
   font-size: 28px;
   transition: ease-in-out 0.3s;
   position: absolute;
   top: -36px;
   left: calc(50% - 36px);
-  border: 6px solid var(--color-white);
+  border: 6px solid white;
 }
-.services .details h3 {
-  color: var(--color-default);
+.products .details h3 {
+  color: #1a1f24;
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
 }
-.services .details p {
+.products .details p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
   color: black;
 }
-.services .service-item:hover .details h3 {
-  color: var(--color-primary);
+.products .service-item:hover .details h3 {
+  color: #032F62;
 }
-.services .service-item:hover .details .icon {
-  background: var(--color-white);
-  border: 2px solid var(--color-primary);
+.products .service-item:hover .details .icon {
+  background: white;
+  border: 2px solid #032F62;
 }
-.services .service-item:hover .details .icon i {
-  color: var(--color-primary);
+.products .service-item:hover .details .icon i {
+  color: #032F62;
 }
-.services .service-item:hover .img img {
+.products .service-item:hover .img img {
   transform: scale(1.2);
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
+# Suppliers Section
 --------------------------------------------------------------*/
 .pricing .pricing-item {
-  box-shadow: 0 3px 20px -2px rgba(var(--color-gray-rgb), 0.15);
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
   height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 .pricing .pricing-item img {
-  padding: 20px;
+  padding: 60px 20px;
   max-width: 75%;
 }
 .pricing .pricing-header {
-  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.9), rgba(var(--color-secondary-rgb), 0.9)) center center;
+  background: linear-gradient(rgba(72, 86, 100, 0.9), rgba(72, 86, 100, 0.9)) center center;
   background-size: cover;
   text-align: center;
   padding: 15px;
@@ -484,10 +484,10 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 22px;
-  color: var(--color-white);
+  color: white;
 }
 .pricing .featured .pricing-header {
-  background: linear-gradient(rgba(var(--color-primary-rgb), 0.9), rgba(var(--color-primary-rgb), 0.9)) center center;
+  background: linear-gradient(rgba(3, 47, 98, 0.9), rgba(3, 47, 98, 0.9)) center center;
 }
 
 /*--------------------------------------------------------------
@@ -542,7 +542,6 @@ section {
 }
 .suppliers-area img {
   padding: 20px 20px;
-  max-width: 75%;
 }
 .product-item {
   position: relative;
@@ -674,7 +673,7 @@ section {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #999999;
 }
 .clients-area .clients-logos .single-image:hover {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.096);
@@ -744,48 +743,23 @@ section {
 --------------------------------------------------------------*/
 .footer {
   background: linear-gradient(to left, #032F62, #767EE8);
-  padding: 0 0 30px 0;
-  font-size: 14px;
-}
-.footer .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 10px;
+  padding: 0 0 10px 0;
 }
 .footer .footer-info .logo img {
-  max-height: 40px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  max-width: 8%;
+  padding: 10px 0;
+}
+@media (max-width: 991px) {
+  .footer .footer-info .logo img {
+    max-width: 12%;
+  }
 }
 @media (max-width: 768px) {
   .footer .footer-info .logo img {
-    margin-bottom: 10px;
-    text-align: center;
+    max-width: 20%;
   }
 }
 .footer .footer-info p {
-  font-size: 14px;
-  margin-bottom: 0;
   font-family: 'Merriweather', serif;
-}
-.footer .copyright {
-  text-align: left;
-  padding-top: 10px;
+  font-size: 12px;
   color: white;
-}
-@media (max-width: 768px) {
-  .footer .copyright {
-    text-align: center;
-  }
-}
-.footer .credits {
-  padding-top: 66px;
-  text-align: right;
-  font-size: 13px;
-  color: white;
-}
-@media (max-width: 768px) {
-  .footer .credits {
-    padding-top: 10px;
-    text-align: center;
-  }
-}
