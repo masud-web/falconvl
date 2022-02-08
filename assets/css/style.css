@@ -34,8 +34,8 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  position: relative;
 }
-
 .section-header {
   text-align: center;
   padding-bottom: 40px;
@@ -66,6 +66,20 @@ section {
     font-size: 28px;
     line-height: 32px;
   }
+}
+.section-bg {
+  padding: 120px 0;
+  color: #fff;
+}
+.section-bg:before {
+  content: "";
+  background: linear-gradient(to right, #6782b4, #e5f0f9 74%);
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
 }
 
 /*--------------------------------------------------------------
@@ -381,24 +395,100 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Products Section
+# Services Section
 --------------------------------------------------------------*/
-.products {
-  background: 
-  url(../img/wheel1-bg.png) top left/auto 30% no-repeat, 
-  url(../img/wheel2-bg.png) bottom right/auto 20% no-repeat;
-  position: relative;
+.services .img {
+  border-radius: 8px;
   overflow: hidden;
 }
-.products a {
-  color: #032F62;
+.services .img img {
+  transition: 0.6s;
 }
-@media (min-width: 768px) {
-  .products img {
-    max-width: 75%;
-  }
+.services .details {
+  padding: 50px 30px;
+  margin: -100px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
+  background: var(--color-white);
+  position: relative;
+  background: rgba(var(--color-white-rgb), 0.9);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0 25px rgba(var(--color-black-rgb), 0.1);
+}
+.services .details .icon {
+  margin: 0;
+  width: 72px;
+  height: 72px;
+  background: var(--color-primary);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  border: 6px solid var(--color-white);
+}
+.services .details h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+.services .details p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: black;
+}
+.services .service-item:hover .details h3 {
+  color: var(--color-primary);
+}
+.services .service-item:hover .details .icon {
+  background: var(--color-white);
+  border: 2px solid var(--color-primary);
+}
+.services .service-item:hover .details .icon i {
+  color: var(--color-primary);
+}
+.services .service-item:hover .img img {
+  transform: scale(1.2);
 }
 
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+.pricing .pricing-item {
+  box-shadow: 0 3px 20px -2px rgba(var(--color-gray-rgb), 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.pricing .pricing-item img {
+  padding: 20px;
+  max-width: 75%;
+}
+.pricing .pricing-header {
+  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.9), rgba(var(--color-secondary-rgb), 0.9)) center center;
+  background-size: cover;
+  text-align: center;
+  padding: 15px;
+}
+.pricing h3 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: var(--color-white);
+}
+.pricing .featured .pricing-header {
+  background: linear-gradient(rgba(var(--color-primary-rgb), 0.9), rgba(var(--color-primary-rgb), 0.9)) center center;
+}
 
 /*--------------------------------------------------------------
 # Product Page Section
@@ -432,26 +522,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Suppliers Section
+# Suppliers Page Section
 --------------------------------------------------------------*/
+.suppliers-page {
+  background: url(../img/leaf-bg.png) no-repeat left center;
+  background-size: contain;
+}
 .suppliers-area {
-  background: url(../img/suppliers-bg2.png) no-repeat center;
-  background-size: cover;
+  padding: 40px 0;
 }
 .suppliers-area a {
   color: #032F62;
-}
-@media (min-width: 768px) {
-  .suppliers-area img {
-    max-width: 75%;
-  }
-}
-
-/*--------------------------------------------------------------
-# Suppliers Page Section
---------------------------------------------------------------
-.suppliers-area-2 {
-  background: #f8f6f3;
 }
 .suppliers-area h3 {
   font-weight: 700;
@@ -577,10 +658,6 @@ section {
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients-area  {
-  background: url(../img/clients-bg.png) right no-repeat;
-  background-size: cover;
-}
 .clients-area .clients-logos {
   text-align: center;
   display: inline-block;
