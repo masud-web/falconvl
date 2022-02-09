@@ -337,7 +337,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: linear-gradient(to right, #6782b4, #e5f0f9 74%);
+  background: linear-gradient(to right, #6782b4, #e5f0f9 74%) top;
   position: relative;
   overflow: hidden;
 }
@@ -578,10 +578,6 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials {
-  background: url(../img/testimonal-bg.png) left no-repeat;
-  background-size: cover;
-}
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
