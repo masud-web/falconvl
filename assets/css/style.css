@@ -494,26 +494,33 @@ section {
 # Product Page Section
 --------------------------------------------------------------*/
 
-.product-details {
-  background: url(../img/products/leaf-big2.png) no-repeat top left;
-  background-size: 30%;
-  padding-bottom: 30px;
+.paper-bg {
+  background: url(../img/bg/product-page-paper-bg.png) no-repeat bottom,
+  linear-gradient(to bottom, rgba(103, 130, 180, 0.52), rgba(229, 240, 249, 0.73));
+  background-size: cover;
 }
-.product-details-2 {
-  background: #f8f6f3;
+.machineries-bg {
+  background: url(../img/bg/product-page-paper-bg.png) no-repeat center,
+  linear-gradient(to bottom, rgba(103, 130, 180, 0.52), rgba(229, 240, 249, 0.73));
+  background-size: cover;
 }
-.product-title h2 {
+.chemical-bg {
+  background: url(../img/bg/product-page-paper-bg.png) no-repeat center,
+  linear-gradient(to bottom, rgba(103, 130, 180, 0.52), rgba(229, 240, 249, 0.73));
+  background-size: cover;
+}
+.page-section {
+  margin-bottom: 40px;
+}
+.page-section-title h2 {
   font-size: 32px;
   font-weight: 700;
 }
-.product-title img {
-  padding-top: 10px;
-  padding-bottom: 60px;
-}
-.product-item img {
+
+.page-section-item img {
   max-width: 75%;
 }
-.product-item p {
+.page-section-item p {
   text-align: center;
   padding-top: 10px;
   font-family: 'Merriweather', serif;
@@ -524,26 +531,22 @@ section {
 /*--------------------------------------------------------------
 # Suppliers Page Section
 --------------------------------------------------------------*/
-.suppliers-page {
-  background: url(../img/leaf-bg.png) no-repeat left center;
-  background-size: contain;
+.suppliers-bg {
+  background: url(../img/suppliers-page-bg-2.png) no-repeat center,
+    linear-gradient(to bottom, rgba(103, 130, 180, 0.52), rgba(229, 240, 249, 0.73));
+  
+  background-size: cover;
 }
-.suppliers-area {
-  padding: 40px 0;
-}
-.suppliers-area a {
-  color: #032F62;
-}
-.suppliers-area h3 {
+.suppliers-section h3 {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
 }
-.suppliers-area img {
+.suppliers-section img {
   padding: 20px 20px;
 }
-.product-item {
+.page-item {
   position: relative;
 }
 .supplier-logo {
@@ -552,7 +555,7 @@ section {
   transition: .5s ease;
   backface-visibility: hidden;
 }
-.product-item .logo-details {
+.page-item .logo-details {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -562,14 +565,14 @@ section {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.product-item:hover .supplier-logo {
+.page-item:hover .supplier-logo {
   opacity: 0.1;
   border: solid 1px black;
 }
-.product-item:hover .logo-details {
+.page-item:hover .logo-details {
   opacity: 1;
 }
-.product-item .logo-details p {
+.page-item .logo-details p {
   color: #032F62;
   font-size: 11px;
   padding: 0;
