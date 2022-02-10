@@ -493,32 +493,30 @@ section {
 /*--------------------------------------------------------------
 # Product Page Section
 --------------------------------------------------------------*/
-
 .paper-bg {
-	background-image:url(../img/bg/down-arrow.png), url(../img/bg/circle-top.png);
-	background-position:center top, center bottom;
+	background-image: url(../img/bg/down-arrow-2.png), url(../img/bg/eco-bg.avif);
+	background-position:top center, center bottom;
 	background-repeat:no-repeat, no-repeat;
 }
 .machineries-bg {
-  background-image:url(../img/bg/circle-bottom.png), url(../img/bg/circle-top.png);
-	background-position:center top, center bottom;
-	background-repeat:no-repeat, no-repeat;
+  background-image:url(../img/bg/down-arrow-2.png), url(../img/bg/machinary-bg.avif);
+	background-position:top center, center bottom;
+	background-repeat:no-repeat;
 }
 .chemical-bg {
-  background-image:url(../img/bg/circle-bottom.png), url(../img/bg/circle-top.png);
-	background-position:center top, center bottom;
-	background-repeat:no-repeat, no-repeat;
+  background-image:url(../img/bg/down-arrow-2.png), url(../img/bg/chemical-bg.png);
+	background-position:top center, center bottom;
+	background-repeat:no-repeat;
 }
 .page-section {
-  
+ margin-top: 20px;
 }
-.page-section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
+.page-section .logos {
+  margin-bottom: 120px;
 }
-
-.page-section-item img {
-  max-width: 75%;
+.page-section .page-section-item:hover img {
+  transition: 0.6s;
+  transform: scale(1.2);
 }
 .page-section-item p {
   text-align: center;
