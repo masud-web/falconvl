@@ -495,22 +495,22 @@ section {
 --------------------------------------------------------------*/
 
 .paper-bg {
-  background: url(../img/bg/product-page-paper-bg.png) no-repeat bottom,
-  linear-gradient(to bottom, rgba(103, 130, 180, 0.52), rgba(229, 240, 249, 0.73));
-  background-size: cover;
+	background-image:url(../img/bg/down-arrow.png), url(../img/bg/circle-top.png);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat, no-repeat;
 }
 .machineries-bg {
-  background: url(../img/bg/product-page-paper-bg.png) no-repeat center,
-  linear-gradient(to bottom, rgba(103, 130, 180, 0.52), rgba(229, 240, 249, 0.73));
-  background-size: cover;
+  background-image:url(../img/bg/circle-bottom.png), url(../img/bg/circle-top.png);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat, no-repeat;
 }
 .chemical-bg {
-  background: url(../img/bg/product-page-paper-bg.png) no-repeat center,
-  linear-gradient(to bottom, rgba(103, 130, 180, 0.52), rgba(229, 240, 249, 0.73));
-  background-size: cover;
+  background-image:url(../img/bg/circle-bottom.png), url(../img/bg/circle-top.png);
+	background-position:center top, center bottom;
+	background-repeat:no-repeat, no-repeat;
 }
 .page-section {
-  margin-bottom: 40px;
+  
 }
 .page-section-title h2 {
   font-size: 32px;
