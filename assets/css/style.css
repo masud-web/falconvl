@@ -471,7 +471,7 @@ section {
   transition: 0.6s;
 }
 .suppliers .details {
-  padding: 50px 30px;
+  padding: 30px 30px;
   margin: -100px 30px 0 30px;
   transition: all ease-in-out 0.3s;
   background: white;
@@ -480,24 +480,6 @@ section {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
-}
-.suppliers .details .icon {
-  margin: 0;
-  width: 72px;
-  height: 72px;
-  background: #032F62;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  color: white;
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
-  position: absolute;
-  top: -36px;
-  left: calc(50% - 36px);
-  border: 6px solid white;
 }
 .suppliers .details h3 {
   color: #1a1f24;
@@ -513,13 +495,6 @@ section {
   color: black;
 }
 .suppliers .service-item:hover .details h3 {
-  color: #032F62;
-}
-.suppliers .service-item:hover .details .icon {
-  background: white;
-  border: 2px solid #032F62;
-}
-.suppliers .service-item:hover .details .icon i {
   color: #032F62;
 }
 .suppliers .service-item:hover .img img {
